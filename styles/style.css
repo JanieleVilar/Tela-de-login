@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Satisfy&display=swap');
 
 /* SCSS HEX */
 /* $dark-slate-gray: #273F3Eff;
@@ -17,3 +18,83 @@ $gradient-bottom-right: linear-gradient(135deg, #273F3Eff, #A4B297ff, #1E3236ff,
 $gradient-top-left: linear-gradient(225deg, #273F3Eff, #A4B297ff, #1E3236ff, #758B79ff, #85967Fff);
 $gradient-bottom-left: linear-gradient(315deg, #273F3Eff, #A4B297ff, #1E3236ff, #758B79ff, #85967Fff);
 $gradient-radial: radial-gradient(#273F3Eff, #A4B297ff, #1E3236ff, #758B79ff, #85967Fff); */
+
+* {
+  font-family: cursive;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #85967Fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position:  relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+section#login {
+  background-color: beige;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  overflow: hidden;
+  width:  250px;
+  height: 500px;
+}
+
+section#login > div#image {
+  background: #85967Fff url(../images/pexels-hedaetul-islam-926641.jpg) no-repeat;
+  background-size: auto;
+  display: block;
+  height: 200px;
+}
+
+section#login > div#form {
+  display: block;
+  padding: 10px;
+}
+
+div#form > h1 {
+  font-family: Fredoka One;
+  text-align: center;
+  font-size: 35px;
+  color: #1E3236ff;
+}
+
+div#form > form > input {
+  padding: 10px;
+  font-size: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(238, 238, 237);
+  border: none;
+  box-sizing: border-box;
+  margin: 20px 0;
+  box-shadow: 0px 5px 10px #85967Fff
+}
+
+div#form > form > input:focus {
+  padding: 10px;
+  font-size: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(238, 238, 237);
+  border: none;
+  box-sizing: border-box;
+  margin: 20px 0;
+  box-shadow: 0px 0px 10px #85967Fff;
+  outline: 0;
+}
